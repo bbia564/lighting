@@ -1,9 +1,12 @@
 import 'package:dynamic_color/pages/color_first/color_first_binding.dart';
 import 'package:dynamic_color/pages/color_first/color_first_view.dart';
+import 'package:dynamic_color/pages/color_first/sube_ap.dart';
 import 'package:dynamic_color/pages/color_second/color_second_binding.dart';
 import 'package:dynamic_color/pages/color_second/color_second_view.dart';
 import 'package:dynamic_color/pages/color_tab/color_tab_binding.dart';
 import 'package:dynamic_color/pages/color_tab/color_tab_view.dart';
+import 'package:dynamic_color/pages/color_tab/tab_besc/tab_besc_binding.dart';
+import 'package:dynamic_color/pages/color_tab/tab_besc/tab_besc_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -31,7 +34,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
       getPages: Pages,
-      initialRoute: '/colorTab',
+      initialRoute: '/',
       theme: ThemeData(
         useMaterial3: true,
         primaryColor: primaryColor,
@@ -84,7 +87,9 @@ class MyApp extends StatelessWidget {
   }
 }
 List<GetPage<dynamic>> Pages = [
+  GetPage(name: '/', page: () => const TabBescView(), binding: TabBescBinding()),
   GetPage(name: '/colorTab', page: () => ColorTabPage(), binding: ColorTabBinding()),
   GetPage(name: '/colorFirst', page: () => const ColorFirstPage(), binding: ColorFirstBinding()),
+  GetPage(name: '/colorLong', page: () => const SubeAp()),
   GetPage(name: '/colorSecond', page: () => ColorSecondPage(), binding: ColorSecondBinding()),
 ];
