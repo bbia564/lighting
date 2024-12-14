@@ -187,7 +187,7 @@ class _ColorFirstPageState extends State<ColorFirstPage> with SingleTickerProvid
                         padding: EdgeInsets.zero,
                         gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
-                            crossAxisCount: 6, crossAxisSpacing: 10),
+                            crossAxisCount: 6, crossAxisSpacing: 10,mainAxisSpacing: 10),
                         itemCount: accentColors.length,
                         itemBuilder: (_, index) {
                           return Container()
