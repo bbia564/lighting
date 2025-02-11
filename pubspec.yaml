@@ -39,7 +39,7 @@ dependencies:
   styled_widget: ^0.4.1
   fluttertoast: ^8.2.5
   device_info_plus: ^10.1.0
-  flutter_inappwebview: ^6.1.5
+  flutter_inappwebview: ^6.0.0
   dio: ^5.4.3+1
   package_info_plus: ^8.0.0
   flutter_markdown: ^0.7.1
