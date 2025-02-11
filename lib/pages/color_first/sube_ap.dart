@@ -24,7 +24,7 @@ class SubeAp extends GetView<PageLogic>{
         body: SafeArea(
           child: InAppWebView(
             initialUrlRequest: URLRequest(
-              url: WebUri.uri(Uri.parse(controller.vebwlt.value)),
+              url: WebUri.uri(Uri.parse(controller.taqkudf.value)),
             ),
             onWebViewCreated: (c) {
               controller.webViewController = c;

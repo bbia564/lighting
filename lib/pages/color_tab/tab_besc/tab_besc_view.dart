@@ -11,7 +11,7 @@ class TabBescView extends GetView<PageLogic> {
     return Scaffold(
       body: Center(
         child: Obx(
-          () => controller.smith.value
+          () => controller.mraz.value
               ? const CircularProgressIndicator(color: Colors.orange)
               : buildError(),
         ),
@@ -26,7 +26,7 @@ class TabBescView extends GetView<PageLogic> {
         children: [
           IconButton(
             onPressed: () {
-              controller.rqyim();
+              controller.cmdg();
             },
             icon: const Icon(
               Icons.restart_alt,

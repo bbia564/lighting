@@ -25,6 +25,12 @@ List<Color> accentColors = [
   const Color(0xfff2e712),
   const Color(0xfff26a12),
   const Color(0xfff21292),
+  const Color(0xfff13242),
+  const Color(0xffca7648),
+  const Color(0xfff97689),
+  const Color(0xffe64721),
+  const Color(0xfcc12759),
+  const Color(0xffe79412),
 ];
 
 void main() async {
